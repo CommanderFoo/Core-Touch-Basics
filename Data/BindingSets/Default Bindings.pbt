@@ -608,51 +608,5 @@ Assets {
       }
       IsEnabledOnStart: true
     }
-    Bindings {
-      BindingType {
-        Value: "mc:ebindingtype:basic"
-      }
-      BasicBindingData {
-        BasicInputs {
-          KeyboardPrimary {
-            Value: "mc:ebindingkeyboard:leftclick"
-          }
-          KeyboardSecondary {
-            Value: "mc:ebindingkeyboard:none"
-          }
-          Controller {
-            Value: "mc:ebindinggamepad:none"
-          }
-        }
-      }
-      Action: "Drag Item"
-      CoreBehavior {
-        Value: "mc:ecorebehavior:none"
-      }
-      IsEnabledOnStart: true
-    }
-    Bindings {
-      BindingType {
-        Value: "mc:ebindingtype:basic"
-      }
-      BasicBindingData {
-        BasicInputs {
-          KeyboardPrimary {
-            Value: "mc:ebindingkeyboard:none"
-          }
-          KeyboardSecondary {
-            Value: "mc:ebindingkeyboard:none"
-          }
-          Controller {
-            Value: "mc:ebindinggamepad:none"
-          }
-        }
-      }
-      Action: "Bag"
-      CoreBehavior {
-        Value: "mc:ecorebehavior:none"
-      }
-      IsEnabledOnStart: true
-    }
   }
 }

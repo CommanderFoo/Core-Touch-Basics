@@ -49,6 +49,7 @@ Objects {
   }
   ParentId: 4781671109827199097
   ChildIds: 13710912536376622446
+  ChildIds: 15493667112147067071
   ChildIds: 17500545709259800114
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -88,9 +89,9 @@ Objects {
   ParentId: 10138383508493519676
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Icon"
+      Name: "cs:GemsAmount"
       ObjectReference {
-        SelfId: 6868241336763149100
+        SelfId: 14079628862330987466
       }
     }
     Overrides {
@@ -100,9 +101,27 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:UIContainer"
+      Name: "cs:IconButton"
+      AssetReference {
+        Id: 7309032557882530116
+      }
+    }
+    Overrides {
+      Name: "cs:Container"
       ObjectReference {
         SelfId: 13710912536376622446
+      }
+    }
+    Overrides {
+      Name: "cs:Icons"
+      AssetReference {
+        Id: 8260887109977123922
+      }
+    }
+    Overrides {
+      Name: "cs:Audio"
+      ObjectReference {
+        SelfId: 15493667112147067071
       }
     }
   }
@@ -128,6 +147,45 @@ Objects {
   }
 }
 Objects {
+  Id: 15493667112147067071
+  Name: "Audio"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10138383508493519676
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 16037775845470338023
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
   Id: 13710912536376622446
   Name: "UI Container"
   Transform {
@@ -143,7 +201,6 @@ Objects {
   }
   ParentId: 10138383508493519676
   ChildIds: 13213802193717634475
-  ChildIds: 6868241336763149100
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -190,107 +247,6 @@ Objects {
   }
 }
 Objects {
-  Id: 6868241336763149100
-  Name: "Icon"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13710912536376622446
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: 150
-    Height: 150
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    IsHittable: true
-    Button {
-      FontColor {
-        A: 1
-      }
-      FontSize: 20
-      ButtonColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      HoveredColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      PressedColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      DisabledColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Brush {
-        Id: 1708143685814805739
-      }
-      IsButtonEnabled: true
-      ClickMode {
-        Value: "mc:ebuttonclickmode:default"
-      }
-      Font {
-      }
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
-      }
-      ShadowColor {
-        A: 1
-      }
-      ShadowOffset {
-      }
-      BoundAction: "Drag Item"
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-}
-Objects {
   Id: 13213802193717634475
   Name: "Bag"
   Transform {
@@ -305,6 +261,7 @@ Objects {
     }
   }
   ParentId: 13710912536376622446
+  ChildIds: 14079628862330987466
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -361,6 +318,7 @@ Objects {
         Id: 14021788908144964050
       }
       IsButtonEnabled: true
+      OnlyUseMainColor: true
       ClickMode {
         Value: "mc:ebuttonclickmode:default"
       }
@@ -376,8 +334,8 @@ Objects {
         A: 1
       }
       ShadowOffset {
+        Y: -2
       }
-      BoundAction: "Bag"
     }
     AnchorLayout {
       SelfAnchor {
@@ -388,6 +346,85 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:bottomright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 14079628862330987466
+  Name: "Gems Amount"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13213802193717634475
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    UIX: 10
+    UIY: 15
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Gems: 0"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 45
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      Font {
+        Id: 6975164350520242776
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      OutlineColor {
+        A: 1
+      }
+      OutlineSize: 4
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
         }
       }
     }
