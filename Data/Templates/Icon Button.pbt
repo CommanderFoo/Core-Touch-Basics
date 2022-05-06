@@ -1,6 +1,6 @@
 Assets {
   Id: 7309032557882530116
-  Name: "IconButton"
+  Name: "Icon Button"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {

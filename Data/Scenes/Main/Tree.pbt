@@ -97,7 +97,7 @@ Objects {
     Overrides {
       Name: "cs:Bag"
       ObjectReference {
-        SelfId: 13213802193717634475
+        SelfId: 7145877658665768534
       }
     }
     Overrides {
@@ -200,7 +200,7 @@ Objects {
     }
   }
   ParentId: 10138383508493519676
-  ChildIds: 13213802193717634475
+  ChildIds: 7145877658665768534
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -247,7 +247,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13213802193717634475
+  Id: 7145877658665768534
   Name: "Bag"
   Transform {
     Location {
@@ -285,57 +285,24 @@ Objects {
       }
     }
     IsHittable: true
-    Button {
-      FontColor {
-        A: 1
-      }
-      FontSize: 20
-      ButtonColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      HoveredColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      PressedColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      DisabledColor {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
+    Image {
       Brush {
         Id: 14021788908144964050
       }
-      IsButtonEnabled: true
-      OnlyUseMainColor: true
-      ClickMode {
-        Value: "mc:ebuttonclickmode:default"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
       }
-      Font {
-      }
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:center"
+      TeamSettings {
       }
       ShadowColor {
         A: 1
       }
       ShadowOffset {
-        Y: -2
       }
+      ScreenshotIndex: 1
     }
     AnchorLayout {
       SelfAnchor {
@@ -365,7 +332,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13213802193717634475
+  ParentId: 7145877658665768534
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
