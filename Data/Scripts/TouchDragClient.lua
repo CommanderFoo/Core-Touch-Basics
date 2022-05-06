@@ -1,8 +1,8 @@
+local ICONS = require(script:GetCustomProperty("Icons"))
 local ICON_BUTTON = script:GetCustomProperty("IconButton")
+local CONTAINER = script:GetCustomProperty("Container"):WaitForObject()
 local BAG = script:GetCustomProperty("Bag"):WaitForObject()
 local GEMS_AMOUNT = script:GetCustomProperty("GemsAmount"):WaitForObject()
-local CONTAINER = script:GetCustomProperty("Container"):WaitForObject()
-local ICONS = require(script:GetCustomProperty("Icons"))
 local AUDIO = script:GetCustomProperty("Audio"):WaitForObject()
 
 local draggedIcon = nil

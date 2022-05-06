@@ -89,15 +89,9 @@ Objects {
   ParentId: 10138383508493519676
   UnregisteredParameters {
     Overrides {
-      Name: "cs:GemsAmount"
-      ObjectReference {
-        SelfId: 14079628862330987466
-      }
-    }
-    Overrides {
-      Name: "cs:Bag"
-      ObjectReference {
-        SelfId: 7145877658665768534
+      Name: "cs:Icons"
+      AssetReference {
+        Id: 8260887109977123922
       }
     }
     Overrides {
@@ -113,9 +107,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:Icons"
-      AssetReference {
-        Id: 8260887109977123922
+      Name: "cs:Bag"
+      ObjectReference {
+        SelfId: 7145877658665768534
+      }
+    }
+    Overrides {
+      Name: "cs:GemsAmount"
+      ObjectReference {
+        SelfId: 14079628862330987466
       }
     }
     Overrides {
